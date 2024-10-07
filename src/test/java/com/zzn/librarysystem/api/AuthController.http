@@ -1,0 +1,13 @@
+# This test file only supportted by IDAE
+
+### Send POST request with json body
+POST localhost:8080/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "zzn",
+  "password": "password"
+}
+
+###
+GET localhost:8080/oauth2/authorize?client_id=client&scope=user_info&state=123456&response_type=client_credentials&redirect_uri=http://127.0.0.1:8080/callback
